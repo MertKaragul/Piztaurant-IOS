@@ -1,14 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ContentViewModel();
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List{
+            ForEach(viewModel.pizzaModel, id: \.id){ model in
+                Text(model.pizzaName)
+            }
         }
-        .padding()
+        .task {
+            await viewModel.getPizzaData()
+        }
     }
 }
 

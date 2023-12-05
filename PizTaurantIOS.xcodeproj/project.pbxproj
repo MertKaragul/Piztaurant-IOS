@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5C536B2B0A6BA9001D32C5 /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C536A2B0A6BA9001D32C5 /* JsonService.swift */; };
+		0D5C536E2B0A6D69001D32C5 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C536D2B0A6D69001D32C5 /* PizzaModel.swift */; };
+		0D5C53712B0A720A001D32C5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C53702B0A720A001D32C5 /* ContentViewModel.swift */; };
 		0DE602D62B08029C003ED582 /* PizTaurantIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE602D52B08029C003ED582 /* PizTaurantIOSApp.swift */; };
 		0DE602D82B08029C003ED582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE602D72B08029C003ED582 /* ContentView.swift */; };
 		0DE602DA2B08029E003ED582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE602D92B08029E003ED582 /* Assets.xcassets */; };
 		0DE602DD2B08029E003ED582 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE602DC2B08029E003ED582 /* Preview Assets.xcassets */; };
-		0DE602E52B0803BB003ED582 /* pizza-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DE602E42B0803BB003ED582 /* pizza-data.json */; };
+		0DE602E52B0803BB003ED582 /* PizzaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DE602E42B0803BB003ED582 /* PizzaData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D5C536A2B0A6BA9001D32C5 /* JsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonService.swift; sourceTree = "<group>"; };
+		0D5C536D2B0A6D69001D32C5 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		0D5C53702B0A720A001D32C5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		0DE602D22B08029C003ED582 /* PizTaurantIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizTaurantIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE602D52B08029C003ED582 /* PizTaurantIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizTaurantIOSApp.swift; sourceTree = "<group>"; };
 		0DE602D72B08029C003ED582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DE602D92B08029E003ED582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DE602DC2B08029E003ED582 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0DE602E42B0803BB003ED582 /* pizza-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pizza-data.json"; sourceTree = "<group>"; };
+		0DE602E42B0803BB003ED582 /* PizzaData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PizzaData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5C536C2B0A6D50001D32C5 /* PizzaModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C536D2B0A6D69001D32C5 /* PizzaModel.swift */,
+			);
+			path = PizzaModel;
+			sourceTree = "<group>";
+		};
+		0D5C536F2B0A71F5001D32C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C53702B0A720A001D32C5 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0DE602C92B08029C003ED582 = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +75,11 @@
 		0DE602D42B08029C003ED582 /* PizTaurantIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0D5C536F2B0A71F5001D32C5 /* ViewModel */,
+				0DE602E82B08074F003ED582 /* Model */,
+				0DE602E72B080748003ED582 /* Service */,
 				0DE602E62B0803CF003ED582 /* View */,
-				0DE602E32B080387003ED582 /* Resource */,
+				0DE602E32B080387003ED582 /* Resources */,
 				0DE602D92B08029E003ED582 /* Assets.xcassets */,
 				0DE602DB2B08029E003ED582 /* Preview Content */,
 			);
@@ -69,12 +94,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0DE602E32B080387003ED582 /* Resource */ = {
+		0DE602E32B080387003ED582 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0DE602E42B0803BB003ED582 /* pizza-data.json */,
+				0DE602E42B0803BB003ED582 /* PizzaData.json */,
 			);
-			path = Resource;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		0DE602E62B0803CF003ED582 /* View */ = {
@@ -84,6 +109,22 @@
 				0DE602D72B08029C003ED582 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0DE602E72B080748003ED582 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C536A2B0A6BA9001D32C5 /* JsonService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0DE602E82B08074F003ED582 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C536C2B0A6D50001D32C5 /* PizzaModel */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +187,7 @@
 			files = (
 				0DE602DD2B08029E003ED582 /* Preview Assets.xcassets in Resources */,
 				0DE602DA2B08029E003ED582 /* Assets.xcassets in Resources */,
-				0DE602E52B0803BB003ED582 /* pizza-data.json in Resources */,
+				0DE602E52B0803BB003ED582 /* PizzaData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +200,9 @@
 			files = (
 				0DE602D82B08029C003ED582 /* ContentView.swift in Sources */,
 				0DE602D62B08029C003ED582 /* PizTaurantIOSApp.swift in Sources */,
+				0D5C536E2B0A6D69001D32C5 /* PizzaModel.swift in Sources */,
+				0D5C536B2B0A6BA9001D32C5 /* JsonService.swift in Sources */,
+				0D5C53712B0A720A001D32C5 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +350,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertkaragul.PizTaurantIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,8 +372,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,9 +380,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mertkaragul.PizTaurantIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
