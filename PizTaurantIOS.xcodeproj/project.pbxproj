@@ -10,6 +10,7 @@
 		0D5C536B2B0A6BA9001D32C5 /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C536A2B0A6BA9001D32C5 /* JsonService.swift */; };
 		0D5C536E2B0A6D69001D32C5 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C536D2B0A6D69001D32C5 /* PizzaModel.swift */; };
 		0D5C53712B0A720A001D32C5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C53702B0A720A001D32C5 /* ContentViewModel.swift */; };
+		0D89948E2B83DA37007D1AFC /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D89948D2B83DA37007D1AFC /* Resource.swift */; };
 		0DE602D62B08029C003ED582 /* PizTaurantIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE602D52B08029C003ED582 /* PizTaurantIOSApp.swift */; };
 		0DE602D82B08029C003ED582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE602D72B08029C003ED582 /* ContentView.swift */; };
 		0DE602DA2B08029E003ED582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE602D92B08029E003ED582 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		0D5C536A2B0A6BA9001D32C5 /* JsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonService.swift; sourceTree = "<group>"; };
 		0D5C536D2B0A6D69001D32C5 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		0D5C53702B0A720A001D32C5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0D89948D2B83DA37007D1AFC /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		0DE602D22B08029C003ED582 /* PizTaurantIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizTaurantIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE602D52B08029C003ED582 /* PizTaurantIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizTaurantIOSApp.swift; sourceTree = "<group>"; };
 		0DE602D72B08029C003ED582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0D89948C2B83DA28007D1AFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0D89948D2B83DA37007D1AFC /* Resource.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0DE602C92B08029C003ED582 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		0DE602D42B08029C003ED582 /* PizTaurantIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0D89948C2B83DA28007D1AFC /* Common */,
 				0D5C536F2B0A71F5001D32C5 /* ViewModel */,
 				0DE602E82B08074F003ED582 /* Model */,
 				0DE602E72B080748003ED582 /* Service */,
@@ -201,6 +212,7 @@
 				0DE602D82B08029C003ED582 /* ContentView.swift in Sources */,
 				0DE602D62B08029C003ED582 /* PizTaurantIOSApp.swift in Sources */,
 				0D5C536E2B0A6D69001D32C5 /* PizzaModel.swift in Sources */,
+				0D89948E2B83DA37007D1AFC /* Resource.swift in Sources */,
 				0D5C536B2B0A6BA9001D32C5 /* JsonService.swift in Sources */,
 				0D5C53712B0A720A001D32C5 /* ContentViewModel.swift in Sources */,
 			);
